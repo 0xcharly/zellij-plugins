@@ -1,5 +1,5 @@
 {
-  description = "Compact status bar plugin for Zellij";
+  description = "A collection of personal plugins for Zellij";
 
   outputs = inputs @ {flake-parts, ...}:
     flake-parts.lib.mkFlake {inherit inputs;} {

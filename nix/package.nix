@@ -6,10 +6,9 @@
     pkgs,
     ...
   }: {
-    overlayAttrs = {
-      default = config.packages;
-      zellij-ultra-compact-bar = config.packages.default;
+    overlayAttrs.zellij-plugins = config.packages;
+    packages = {
+      ultra-compact-bar = pkgs.callPackage ./mk-zellij-plugin.nix {};
     };
-    packages.default = pkgs.callPackage ./mk-zellij-plugin.nix {};
   };
 }
