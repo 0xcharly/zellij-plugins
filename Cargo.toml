@@ -1,0 +1,11 @@
+[package]
+name = "zellij-ultra-compact-bar"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ansi_term = "0.12.1"
+anyhow = "1.0"
+itertools = "0.13.0"
+thiserror = "1.0"
+zellij-tile = "=0.42.0"
